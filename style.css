@@ -1,0 +1,143 @@
+:root {
+  --roxo-primario: #6A1B9A;
+  --roxo-secundario: #9C27B0;
+  --roxo-acento-claro: #D1C4E9;
+  --roxo-escuro: #4A148C;
+  --fonte-titulo: 'Poppins', sans-serif;
+  --fonte-texto: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--roxo-primario);
+  color: white;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.hero-section {
+  padding: 4rem 0;
+  background-color: #f3f6fb;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text-section {
+  max-width: 500px;
+}
+
+.text-section h2 {
+  font-size: 3rem;
+  font-family: var(--fonte-titulo);
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--roxo-primario);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: var(--roxo-secundario);
+}
+
+.image-section img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* Formulários (Login, Cadastro, Assinatura) */
+.form-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--roxo-escuro);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input,
+.form-container select {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  padding: 0.75rem;
+  background-color: var(--roxo-primario);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-container button:hover {
+  background-color: var(--roxo-secundario);
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.form-container a {
+  color: var(--roxo-primario);
+  text-decoration: none;
+  font-weight: bold;
+}

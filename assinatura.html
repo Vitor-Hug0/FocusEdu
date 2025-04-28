@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assinatura | FocusEdu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Assine o FocusEdu</h2>
+    <form action="payment.php" method="post">
+      <label for="plano">Selecione o plano:</label>
+      <select id="plano" name="plano" required>
+        <option value="">--Selecione--</option>
+        <option value="mensal">Mensal - R$14,99</option>
+        <option value="anual">Anual - R$125,90</option>
+      </select>
+      <input type="text" placeholder="Nome no cartão" required />
+      <input type="text" placeholder="Número do cartão" required />
+      <input type="text" placeholder="Validade (MM/AA)" required />
+      <input type="text" placeholder="CVV" required />
+      <button type="submit" name = "submit">Finalizar Assinatura</button>
+    </form><!-- ta incompleto falta a api e fazer o backend pra isso-->
+  </div>
+</body>
+</html>
